@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Engine｜你的个性化求职材料工作台</title>
+    <meta
+      name="description"
+      content="Career Engine 是一个 v0.1 本地桌面原型，把简历、岗位说明、面试记录和补充材料整理成可推进、可修改、可导出的求职工作流。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Career Engine 首页">
+        <span class="brand-mark">CE</span>
+        <span>Career Engine</span>
+      </a>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="#workflow">工作流</a>
+        <a href="#screens">界面演示</a>
+        <a href="#limits">边界</a>
+        <a href="https://github.com/sherlock0717/desktop-doc-execution-studio" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">v0.1 本地桌面原型</p>
+          <h1>Career Engine</h1>
+          <h2>你的个性化求职材料工作台</h2>
+          <p class="hero-lead">
+            把零散的简历、岗位说明、面试记录和补充材料，整理成一条可推进、可修改、可导出的求职工作流。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/sherlock0717/desktop-doc-execution-studio#readme" target="_blank" rel="noreferrer">
+              查看项目说明
+            </a>
+            <a class="button button-secondary" href="#screens">查看界面演示</a>
+          </div>
+          <div class="meta-row" aria-label="项目标签">
+            <span>本地桌面原型</span>
+            <span>求职材料整理与推进</span>
+            <span>v0.1</span>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Career Engine 产品界面示意">
+          <div class="window-frame">
+            <div class="window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="product-grid">
+              <aside class="mock-sidebar">
+                <div class="mock-title"></div>
+                <div class="mock-file active"></div>
+                <div class="mock-file"></div>
+                <div class="mock-file short"></div>
+              </aside>
+              <section class="mock-main">
+                <div class="mock-status"></div>
+                <div class="mock-heading"></div>
+                <div class="mock-line long"></div>
+                <div class="mock-line"></div>
+                <div class="mock-block"></div>
+                <div class="mock-line long"></div>
+                <div class="mock-line medium"></div>
+              </section>
+              <aside class="mock-panel">
+                <div class="mock-chip"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card compact"></div>
+                <div class="mock-card compact"></div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Problem</p>
+          <h2>为什么需要这样一个工作台？</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>求职材料不只是一份简历</h3>
+            <p>岗位说明、项目补充、面试记录和个人经历会一起影响表达。只处理一份简历，很容易把后续问题留给用户自己消化。</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>内容分散，口径很难统一</h3>
+            <p>同一段经历在简历、面试和自我介绍里经常说法不一致。Career Engine 把材料先放进同一个案例，再围绕它推进。</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>重点是主稿如何走向可投递</h3>
+            <p>它不是为了多生成几段文字，而是帮助用户看见当前主稿、待处理建议和下一步动作。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section-shell section-block">
+        <div class="section-heading wide">
+          <p class="eyebrow">Workflow</p>
+          <h2>它怎么把一堆材料，收成一个能继续推进的版本？</h2>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-step">
+            <span>1</span>
+            <h3>导入材料</h3>
+            <p>把简历、岗位说明、面试记录和补充材料放进同一个本地案例。</p>
+          </article>
+          <article class="flow-step">
+            <span>2</span>
+            <h3>确认类型</h3>
+            <p>先确认材料是什么，再决定当前输入能支持哪些生成结果。</p>
+          </article>
+          <article class="flow-step">
+            <span>3</span>
+            <h3>解析并收敛主稿</h3>
+            <p>以工作稿为主对象，建议只围绕主稿推进，不默认覆盖用户内容。</p>
+          </article>
+          <article class="flow-step">
+            <span>4</span>
+            <h3>表达辅导与导出结果</h3>
+            <p>材料足够时再进入面试表达辅导、练习和可交付的本地导出。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>当前版本的 4 个核心能力</h2>
+        </div>
+        <div class="card-grid four">
+          <article class="capability-card">
+            <h3>材料整理</h3>
+            <p>把不同来源的求职材料纳入同一个案例，先确认类型，再判断当前输入能生成什么。</p>
+            <p class="boundary">边界：复杂 PDF 和 Word 抽取仍可能受原始排版影响。</p>
+          </article>
+          <article class="capability-card">
+            <h3>主稿收敛</h3>
+            <p>中间主区围绕当前工作稿展开，建议可以写入，但主稿始终由用户确认和保存。</p>
+            <p class="boundary">边界：v0.1 以简历主稿为核心，暂不做多版本复杂管理。</p>
+          </article>
+          <article class="capability-card">
+            <h3>面试表达辅导</h3>
+            <p>当材料足够时，系统会从面试官视角给出表达建议、风险提醒和回答思路。</p>
+            <p class="boundary">边界：不是聊天机器人，也不会替用户编造不存在的经历。</p>
+          </article>
+          <article class="capability-card">
+            <h3>基础练习与导出</h3>
+            <p>支持面试题、逐题评分、综合报告和 ZIP 导出。导出内容会按能力和非空结果裁剪。</p>
+            <p class="boundary">边界：完整报告需要简历、岗位说明和补充材料支撑。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="screens" class="section-shell section-block">
+        <div class="section-heading wide">
+          <p class="eyebrow">Interface</p>
+          <h2>界面是怎么组织工作的？</h2>
+          <p>页面采用左侧上下文、中间主任务、右侧检查面板的结构，让用户知道材料在哪里、主稿在哪里、下一步在哪里。</p>
+        </div>
+        <div class="screen-grid">
+          <article class="screen-card">
+            <div class="screen-shot empty-start" role="img" aria-label="空白起始页截图占位">
+              <img src="./screenshots/01-empty-start.png" alt="Career Engine 空白起始页" onerror="this.hidden=true" />
+            </div>
+            <h3>空白起始页</h3>
+            <p>启动后不自动进入示例，用户可以选择导入自己的材料，也可以主动打开示例案例。</p>
+          </article>
+          <article class="screen-card">
+            <div class="screen-shot parsed-draft" role="img" aria-label="解析后主稿页截图占位">
+              <img src="./screenshots/03-after-parse-draft.png" alt="Career Engine 解析后主稿页" onerror="this.hidden=true" />
+            </div>
+            <h3>解析后主稿页</h3>
+            <p>中间是当前工作稿，右侧是建议、依据材料和解析摘要，主次关系更清楚。</p>
+          </article>
+          <article class="screen-card">
+            <div class="screen-shot interview" role="img" aria-label="面试辅导或练习页截图占位">
+              <img src="./screenshots/04-interview-coaching.png" alt="Career Engine 面试辅导或练习页" onerror="this.hidden=true" />
+            </div>
+            <h3>面试辅导 / 面试练习页</h3>
+            <p>材料足够时再出现面试相关入口，辅导和练习都围绕已导入材料展开。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-block compare-section">
+        <div class="section-heading">
+          <p class="eyebrow">Positioning</p>
+          <h2>它不是一次性的聊天分析，而是一张工作台</h2>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card muted">
+            <h3>普通聊天式处理</h3>
+            <ul>
+              <li>材料散落在多轮对话里</li>
+              <li>回答更像一次性文本</li>
+              <li>主稿和建议容易脱节</li>
+              <li>结果需要用户手动整理</li>
+            </ul>
+          </article>
+          <article class="compare-card strong">
+            <h3>Career Engine</h3>
+            <ul>
+              <li>材料被组织进同一案例</li>
+              <li>主稿持续推进</li>
+              <li>辅导和练习围绕材料展开</li>
+              <li>结果可导出，也能继续迭代</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="limits" class="section-shell section-block">
+        <div class="section-heading wide">
+          <p class="eyebrow">Scope</p>
+          <h2>当前版本做到哪里，也坦诚停在哪里</h2>
+        </div>
+        <div class="limit-grid">
+          <article>
+            <h3>本地原型</h3>
+            <p>当前需要本地前后端和模型服务环境，不是免安装 SaaS。</p>
+          </article>
+          <article>
+            <h3>文档抽取会波动</h3>
+            <p>复杂 PDF、Word 版式可能影响抽取质量，需要后续继续加固。</p>
+          </article>
+          <article>
+            <h3>导出模板仍在完善</h3>
+            <p>v0.1 优先保证内容可信和不导出空壳，正式模板留到后续版本。</p>
+          </article>
+          <article>
+            <h3>多案例体验后续再补</h3>
+            <p>当前重点是跑通单个本地案例的主流程，不先铺复杂案例系统。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell">
+        <p class="eyebrow">Career Engine v0.1</p>
+        <h2>一个围绕求职材料整理、主稿收敛与表达推进而设计的本地桌面原型。</h2>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/sherlock0717/desktop-doc-execution-studio" target="_blank" rel="noreferrer">
+            查看 GitHub 仓库
+          </a>
+          <a class="button button-secondary" href="#screens">查看界面截图</a>
+          <a class="button button-secondary" href="https://github.com/sherlock0717/desktop-doc-execution-studio#readme" target="_blank" rel="noreferrer">
+            查看当前版本说明
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
