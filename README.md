@@ -3,7 +3,8 @@
 
 把零散的简历、岗位说明、面试记录和补充材料，整理成一条可推进、可修改、可导出的求职工作流。
 
-![Hero 截图占位](docs/screenshots/hero.png)
+<img width="122" height="118" alt="image" src="https://github.com/user-attachments/assets/69ff2fb3-1395-41e6-9968-6bfc4ab7ce4a" />
+
 
 Career Engine 不是一份“看完就结束”的分析结果。  
 它更像一张本地桌面工作台：先把材料拉回同一个案例里，再沿着明确的步骤推进主稿、整理表达、完成练习，并收成一个更接近可投递、可继续打磨的版本。
