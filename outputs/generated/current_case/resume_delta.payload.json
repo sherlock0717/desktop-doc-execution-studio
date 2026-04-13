@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "category": "strengthen",
+      "text": "在教育背景中添加具体课程名称",
+      "target_section": "education"
+    },
+    {
+      "category": "add_expression",
+      "text": "在核心项目经历中添加详细的研究方法",
+      "target_section": "projects"
+    },
+    {
+      "category": "strengthen",
+      "text": "在实习经历中描述具体任务和 accomplishments",
+      "target_section": "internships"
+    },
+    {
+      "category": "add_expression",
+      "text": "在技能标签中添加相关工具",
+      "target_section": "skills"
+    },
+    {
+      "category": "weaken",
+      "text": "删除‘• ‘的前导符号",
+      "target_section": "education"
+    },
+    {
+      "category": "rewrite_direction",
+      "text": "在面试记录中转换表述方式",
+      "target_section": "general"
+    },
+    {
+      "category": "strengthen",
+      "text": "在项目经历中添加成功结果",
+      "target_section": "projects"
+    },
+    {
+      "category": "add_expression",
+      "text": "在公开评论分析中描述统计学方法",
+      "target_section": "general"
+    },
+    {
+      "category": "weaken",
+      "text": "删除‘—’的连续符号",
+      "target_section": "skills"
+    },
+    {
+      "category": "strengthen",
+      "text": "在简历中添加相关 Certifications",
+      "target_section": "basic_info"
+    },
+    {
+      "category": "add_expression",
+      "text": "在项目经历中描述具体算法",
+      "target_section": "projects"
+    },
+    {
+      "category": "strengthen",
+      "text": "在面试记录中描述具体软技能",
+      "target_section": "general"
+    },
+    {
+      "category": "add_expression",
+      "text": "在简历中添加相关 programming languages",
+      "target_section": "basic_info"
+    },
+    {
+      "category": "weaken",
+      "text": "删除多余的句号",
+      "target_section": "general"
+    }
+  ],
+  "cited_snippet_ids": [
+    "s0010",
+    "s0012",
+    "s0009"
+  ]
+}

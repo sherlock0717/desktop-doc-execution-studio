@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "job-material-studio",
+  "version": "0.1.0",
+  "identifier": "com.desktop.doc.execution.studio",
+  "build": {
+    "beforeDevCommand": "npm run dev --prefix app/frontend",
+    "beforeBuildCommand": "npm run build --prefix app/frontend",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../app/frontend/dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Job Material Studio",
+        "width": 1320,
+        "height": 820,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "msi",
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  }
+}

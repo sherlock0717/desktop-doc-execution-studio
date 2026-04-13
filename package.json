@@ -1,0 +1,16 @@
+{
+  "name": "desktop-doc-execution-studio",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Root scripts for Vite frontend + Tauri desktop shell",
+  "scripts": {
+    "dev": "npm run dev --prefix app/frontend",
+    "build": "npm run build --prefix app/frontend",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}

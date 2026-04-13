@@ -1,0 +1,41 @@
+{
+  "case_id": "case_demo_001",
+  "case_title": "示例：小何 · 产品经理岗位材料包",
+  "generated_at": "2026-04-14T02:37:08",
+  "input_files": [
+    {
+      "name": "xiaohe_jd_pm.txt",
+      "type": "jd",
+      "label": "岗位说明",
+      "extractable": true
+    },
+    {
+      "name": "xiaohe_resume.txt",
+      "type": "resume",
+      "label": "简历",
+      "extractable": true
+    },
+    {
+      "name": "xiaohe_interview_notes.md",
+      "type": "interview_note",
+      "label": "面试记录",
+      "extractable": true
+    },
+    {
+      "name": "xiaohe_project_notes.md",
+      "type": "supporting_material",
+      "label": "项目补充",
+      "extractable": true
+    }
+  ],
+  "generated_outputs": [
+    "job_brief.md",
+    "job_brief.payload.json",
+    "resume_delta.md",
+    "resume_delta.payload.json",
+    "interview_pack.md",
+    "interview_pack.payload.json",
+    "archive_manifest.json"
+  ],
+  "notes": "演示案例：与真实模式共用 JSON→Markdown 渲染链；证据由 snippet_id 映射；解析摘要为确定性生成。"
+}

@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Default webview permissions for the embedded UI","local":true,"windows":["main"],"permissions":["core:default","dialog:default","fs:default","dialog:allow-save","fs:allow-write-text-file","fs:allow-write-file","fs:allow-read-text-file","fs:allow-exists","fs:allow-mkdir"]}}

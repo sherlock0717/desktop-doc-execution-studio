@@ -1,0 +1,9 @@
+node_modules/
+src-tauri/target/
+.venv/
+__pycache__/
+*.pyc
+app/frontend/dist/
+outputs/case_runtime/
+uploads/
+build_log.txt

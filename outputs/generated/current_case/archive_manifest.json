@@ -1,0 +1,23 @@
+{
+  "case_id": "case_c1c11a73a7",
+  "case_title": "娓告垙鐢ㄦ埛鐮旂┒涓庣帺瀹舵礊瀵熼€氱敤鐗坃2026鏄ユ嫑_瀛欐捣婢刜缁堢増",
+  "generated_at": "2026-04-14T01:49:20",
+  "input_files": [
+    {
+      "name": "娓告垙鐢ㄦ埛鐮旂┒涓庣帺瀹舵礊瀵熼€氱敤鐗坃2026鏄ユ嫑_瀛欐捣婢刜缁堢増.docx",
+      "type": "resume",
+      "label": "简历",
+      "extractable": true
+    }
+  ],
+  "generated_outputs": [
+    "job_brief.md",
+    "job_brief.payload.json",
+    "resume_delta.md",
+    "resume_delta.payload.json",
+    "interview_pack.md",
+    "interview_pack.payload.json",
+    "archive_manifest.json"
+  ],
+  "notes": "归档清单由确定性逻辑生成；正文由 LLM 依据导入材料与 snippet 候选生成 JSON 后渲染。"
+}
