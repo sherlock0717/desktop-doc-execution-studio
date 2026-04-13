@@ -140,6 +140,16 @@ h1 {
   font-size: 20px;
 }
 
+.runline {
+  margin: 20px 0 0;
+  padding: 11px 14px;
+  border: 1px solid rgba(61, 220, 151, 0.22);
+  border-radius: 8px;
+  background: rgba(61, 220, 151, 0.08);
+  color: var(--text);
+  font-size: 14px;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -327,6 +337,10 @@ h1 {
   max-width: 860px;
 }
 
+.compact-heading {
+  margin-bottom: 20px;
+}
+
 .section-heading h2,
 .final-cta h2 {
   margin: 0;
@@ -344,7 +358,8 @@ h1 {
 .flow-grid,
 .screen-grid,
 .compare-grid,
-.limit-grid {
+.limit-grid,
+.highlight-grid {
   display: grid;
   gap: 18px;
 }
@@ -362,7 +377,8 @@ h1 {
 .flow-step,
 .screen-card,
 .compare-card,
-.limit-grid article {
+.limit-grid article,
+.highlight-grid article {
   border: 1px solid var(--line);
   border-radius: 20px;
   background: rgba(15, 29, 46, 0.78);
@@ -373,8 +389,33 @@ h1 {
 .capability-card,
 .flow-step,
 .compare-card,
-.limit-grid article {
+.limit-grid article,
+.highlight-grid article {
   padding: 24px;
+}
+
+.highlight-block {
+  padding-top: 28px;
+}
+
+.highlight-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.highlight-grid article {
+  min-height: 138px;
+  background: rgba(86, 194, 255, 0.06);
+}
+
+.highlight-grid h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.highlight-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
 }
 
 .card-number {
@@ -434,6 +475,14 @@ h1 {
 
 .screen-card {
   overflow: hidden;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.screen-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(86, 194, 255, 0.34);
 }
 
 .screen-card h3,
@@ -446,10 +495,18 @@ h1 {
 }
 
 .screen-shot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   min-height: 210px;
+  padding: 0;
+  border: 0;
   border-bottom: 1px solid var(--line);
   background-color: var(--bg-soft);
+  color: inherit;
+  cursor: zoom-in;
   position: relative;
+  overflow: hidden;
 }
 
 .screen-shot::before {
@@ -470,6 +527,12 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
+  background: var(--bg-soft);
+}
+
+.screen-shot img[hidden] {
+  display: none;
 }
 
 .compare-grid {
@@ -496,6 +559,73 @@ h1 {
 
 .limit-grid {
   grid-template-columns: repeat(4, 1fr);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  place-items: center;
+  padding: 36px;
+}
+
+.image-modal[aria-hidden="false"] {
+  display: grid;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(2, 8, 14, 0.82);
+  cursor: zoom-out;
+}
+
+.modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 94vw);
+  max-height: 90vh;
+  margin: 0;
+  border: 1px solid rgba(234, 242, 255, 0.18);
+  border-radius: 20px;
+  background: #07111d;
+  box-shadow: 0 28px 96px rgba(0, 0, 0, 0.52);
+  overflow: hidden;
+}
+
+.modal-panel img {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  background: #07111d;
+}
+
+.modal-panel figcaption {
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(234, 242, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(7, 17, 29, 0.84);
+  color: var(--text);
+  cursor: pointer;
 }
 
 .final-cta {
@@ -544,7 +674,8 @@ h1 {
   .flow-grid,
   .screen-grid,
   .compare-grid,
-  .limit-grid {
+  .limit-grid,
+  .highlight-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -595,7 +726,12 @@ h1 {
   .flow-grid,
   .screen-grid,
   .compare-grid,
-  .limit-grid {
+  .limit-grid,
+  .highlight-grid {
     grid-template-columns: 1fr;
+  }
+
+  .image-modal {
+    padding: 18px;
   }
 }

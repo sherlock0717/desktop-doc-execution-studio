@@ -39,6 +39,7 @@
             </a>
             <a class="button button-secondary" href="#screens">查看界面演示</a>
           </div>
+          <p class="runline">当前已跑通：导入材料 → 确认类型 → 解析主稿 → 表达辅导 → 导出结果</p>
           <div class="meta-row" aria-label="项目标签">
             <span>本地桌面原型</span>
             <span>求职材料整理与推进</span>
@@ -80,6 +81,27 @@
         </div>
       </section>
 
+      <section class="section-shell highlight-block">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Focus</p>
+          <h2>这个项目里，我重点解决了什么</h2>
+        </div>
+        <div class="highlight-grid">
+          <article>
+            <h3>把散文件收成单案例</h3>
+            <p>不是继续堆材料，而是把简历、岗位说明、面试记录和补充内容收回同一个工作台。</p>
+          </article>
+          <article>
+            <h3>把主稿扶正成唯一主对象</h3>
+            <p>所有建议、辅导和导出都围绕当前工作稿展开，避免结果散成一堆中间产物。</p>
+          </article>
+          <article>
+            <h3>先判断能做什么，再决定生成什么</h3>
+            <p>当前输入不支持的内容不会被硬生成，减少空壳结果和无意义输出。</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section-shell section-block">
         <div class="section-heading">
           <p class="eyebrow">Problem</p>
@@ -98,7 +120,7 @@
           </article>
           <article class="card">
             <span class="card-number">03</span>
-            <h3>重点是主稿如何走向可投递</h3>
+            <h3>关注主稿如何走向可投递</h3>
             <p>它不是为了多生成几段文字，而是帮助用户看见当前主稿、待处理建议和下一步动作。</p>
           </article>
         </div>
@@ -166,29 +188,29 @@
         <div class="section-heading wide">
           <p class="eyebrow">Interface</p>
           <h2>界面是怎么组织工作的？</h2>
-          <p>页面采用左侧上下文、中间主任务、右侧检查面板的结构，让用户知道材料在哪里、主稿在哪里、下一步在哪里。</p>
+          <p>左侧是案例材料，中间是当前主任务，右侧是检查面板。用户不需要在一堆结果里找主线。</p>
         </div>
         <div class="screen-grid">
           <article class="screen-card">
-            <div class="screen-shot empty-start" role="img" aria-label="空白起始页截图占位">
+            <button class="screen-shot" type="button" data-full="./screenshots/01-empty-start.png" data-title="空白起始页" aria-label="查看空白起始页大图">
               <img src="./screenshots/01-empty-start.png" alt="Career Engine 空白起始页" onerror="this.hidden=true" />
-            </div>
+            </button>
             <h3>空白起始页</h3>
-            <p>启动后不自动进入示例，用户可以选择导入自己的材料，也可以主动打开示例案例。</p>
+            <p>启动后先进入空白工作台，用户可以导入自己的材料，也可以主动打开示例案例。</p>
           </article>
           <article class="screen-card">
-            <div class="screen-shot parsed-draft" role="img" aria-label="解析后主稿页截图占位">
-              <img src="./screenshots/03-after-parse-draft.png" alt="Career Engine 解析后主稿页" onerror="this.hidden=true" />
-            </div>
+            <button class="screen-shot" type="button" data-full="./screenshots/02-after-parse-draft.png" data-title="解析后主稿页" aria-label="查看解析后主稿页大图">
+              <img src="./screenshots/02-after-parse-draft.png" alt="Career Engine 解析后主稿页" onerror="this.hidden=true" />
+            </button>
             <h3>解析后主稿页</h3>
-            <p>中间是当前工作稿，右侧是建议、依据材料和解析摘要，主次关系更清楚。</p>
+            <p>中间是当前主稿，右侧是建议、依据和解析摘要，主次关系更清楚。</p>
           </article>
           <article class="screen-card">
-            <div class="screen-shot interview" role="img" aria-label="面试辅导或练习页截图占位">
-              <img src="./screenshots/04-interview-coaching.png" alt="Career Engine 面试辅导或练习页" onerror="this.hidden=true" />
-            </div>
+            <button class="screen-shot" type="button" data-full="./screenshots/03-interview-view.png" data-title="面试辅导 / 面试练习页" aria-label="查看面试辅导或面试练习页大图">
+              <img src="./screenshots/03-interview-view.png" alt="Career Engine 面试辅导或面试练习页" onerror="this.hidden=true" />
+            </button>
             <h3>面试辅导 / 面试练习页</h3>
-            <p>材料足够时再出现面试相关入口，辅导和练习都围绕已导入材料展开。</p>
+            <p>当输入条件足够时，页面会继续展开表达辅导和练习模块，所有内容都围绕已导入材料推进。</p>
           </article>
         </div>
       </section>
@@ -203,7 +225,6 @@
             <h3>普通聊天式处理</h3>
             <ul>
               <li>材料散落在多轮对话里</li>
-              <li>回答更像一次性文本</li>
               <li>主稿和建议容易脱节</li>
               <li>结果需要用户手动整理</li>
             </ul>
@@ -213,7 +234,6 @@
             <ul>
               <li>材料被组织进同一案例</li>
               <li>主稿持续推进</li>
-              <li>辅导和练习围绕材料展开</li>
               <li>结果可导出，也能继续迭代</li>
             </ul>
           </article>
@@ -228,19 +248,19 @@
         <div class="limit-grid">
           <article>
             <h3>本地原型</h3>
-            <p>当前需要本地前后端和模型服务环境，不是免安装 SaaS。</p>
+            <p>需要本地前后端和模型服务环境，暂不是免安装 SaaS。</p>
           </article>
           <article>
             <h3>文档抽取会波动</h3>
-            <p>复杂 PDF、Word 版式可能影响抽取质量，需要后续继续加固。</p>
+            <p>复杂 PDF、Word 版式可能影响抽取质量。</p>
           </article>
           <article>
             <h3>导出模板仍在完善</h3>
-            <p>v0.1 优先保证内容可信和不导出空壳，正式模板留到后续版本。</p>
+            <p>v0.1 先保证内容可信，不导出空壳。</p>
           </article>
           <article>
             <h3>多案例体验后续再补</h3>
-            <p>当前重点是跑通单个本地案例的主流程，不先铺复杂案例系统。</p>
+            <p>当前优先跑通单个本地案例的主流程。</p>
           </article>
         </div>
       </section>
@@ -259,5 +279,46 @@
         </div>
       </section>
     </main>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <button class="modal-backdrop" type="button" data-close-modal aria-label="关闭图片预览"></button>
+      <figure class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="关闭">关闭</button>
+        <img id="modalImage" src="" alt="" />
+        <figcaption id="modalTitle"></figcaption>
+      </figure>
+    </div>
+
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      const modalTitle = document.getElementById("modalTitle");
+
+      document.querySelectorAll(".screen-shot").forEach((button) => {
+        button.addEventListener("click", () => {
+          modalImage.src = button.dataset.full;
+          modalImage.alt = button.dataset.title;
+          modalTitle.textContent = button.dataset.title;
+          modal.setAttribute("aria-hidden", "false");
+          document.body.classList.add("modal-open");
+        });
+      });
+
+      document.querySelectorAll("[data-close-modal]").forEach((button) => {
+        button.addEventListener("click", () => {
+          modal.setAttribute("aria-hidden", "true");
+          modalImage.src = "";
+          document.body.classList.remove("modal-open");
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+          modal.setAttribute("aria-hidden", "true");
+          modalImage.src = "";
+          document.body.classList.remove("modal-open");
+        }
+      });
+    </script>
   </body>
 </html>
