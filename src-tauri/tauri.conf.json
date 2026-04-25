@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "job-material-studio",
+  "productName": "求职材料执行台",
   "version": "0.1.0",
   "identifier": "com.desktop.doc.execution.studio",
   "build": {
@@ -14,7 +14,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "Job Material Studio",
+        "title": "求职材料执行台",
         "width": 1320,
         "height": 820,
         "resizable": true
